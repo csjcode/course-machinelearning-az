@@ -32,7 +32,7 @@ Notes for Udemy course on Machine Learning A-Z
 * Go to: https://www.superdatascience.com/machine-learning/
 * Unzip both files
 * Place Preprocsessing in Template folder structures
-* First dataset is Data.csv - first 3 rows are the indpendednt variables, last row is dependent
+* First dataset is Data.csv - first 3 rows are the independent variables, last row is dependent
 
 ### 8 - Importing the Libraries 5:20
 
@@ -43,10 +43,25 @@ Notes for Udemy course on Machine Learning A-Z
 * `import pandas as pd` - best library to import and manage datasets
 * Highlight this cose and hit CTRL-Enter to execute to make sure it is in correctly.
 * Note: in R you don't have to separately load the packages.
-* 
-
 
 ### 9 - Importing the Dataset 11:55
+
+* `dataset = pd.read_csv('Data.csv')` - Add this to import the dataset
+* In variable explorer you can see the dataset
+* Change the salary from scientific notation: from `%.3g` to `%.0f`
+* Let's start creating our matrix of features
+* Add new code for the data:
+```
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, 3].values
+```
+
+* First, we take all the lines (left of first comma) and then all but the last line (all but last column, right of comma)
+* Execute that line and type X in the console. This is our matrix of independent variables.
+* Y is goign to be for the last column
+
+
+
 ### 10 - For Python learners, summary of Object-oriented programming: classes & objects 0:00
 ### 11 - Missing Data 15:57
 ### 12 - Categorical Data 18:01
