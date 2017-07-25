@@ -32,10 +32,20 @@ Notes for Udemy course on Machine Learning A-Z
 * Go to: https://www.superdatascience.com/machine-learning/
 * Unzip both files
 * Place Preprocsessing in Template folder structures
-* First dataset is Data.csv - first 3 rows are the indpendednt variables, last row is depenedent
-* 
+* First dataset is Data.csv - first 3 rows are the indpendednt variables, last row is dependent
 
 ### 8 - Importing the Libraries 5:20
+
+* We need to create a file for the Data Preprocessing Template - data_processing_template.py
+* We need to import 3 basic libraries
+* `import numpy as np`
+* `import matplotlib.pyplot as plt` - to plot math charts, anytime you want to plot something in Python
+* `import pandas as pd` - best library to import and manage datasets
+* Highlight this cose and hit CTRL-Enter to execute to make sure it is in correctly.
+* Note: in R you don't have to separately load the packages.
+* 
+
+
 ### 9 - Importing the Dataset 11:55
 ### 10 - For Python learners, summary of Object-oriented programming: classes & objects 0:00
 ### 11 - Missing Data 15:57
