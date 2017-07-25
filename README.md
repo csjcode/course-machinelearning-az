@@ -22,9 +22,19 @@ Notes for Udemy course on Machine Learning A-Z
 
 ## Part 1: Data Preprocessing - Section: 2 0 / 11
 
-
 ### 6 - Welcome to Part 1 - Data Preprocessing 1:35
+
+* We need ot start out with Data PreProcessing to get to the fun parts later
+* This involves downloading a lot of datasets and processing them.
+
 ### 7 - Get the dataset 6:58
+
+* Go to: https://www.superdatascience.com/machine-learning/
+* Unzip both files
+* Place Preprocsessing in Template folder structures
+* First dataset is Data.csv - first 3 rows are the indpendednt variables, last row is depenedent
+* 
+
 ### 8 - Importing the Libraries 5:20
 ### 9 - Importing the Dataset 11:55
 ### 10 - For Python learners, summary of Object-oriented programming: classes & objects 0:00
