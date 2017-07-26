@@ -75,6 +75,10 @@ y = dataset.iloc[:, 3].values
 * We're switching out NaN - reason is if you look in "Variable Explorer" at Data.csv in DataFrame mode you will see NaN in missing blanks.
 * Now we make a strategy for mean = `imputer = Imputer(missing_values = 'NaN',strategy = 'mean')`
 * Now we set axis=0 for columns `imputer = Imputer(missing_values = 'NaN',strategy = 'mean', axis = 0)`
+* `imputer = imputer.fit(X[:,1:3])` - we're taking the 1 and 2 rows but not 3 (1:3 means 1 and 2 but not 3)
+* Run the impute part of the code
+* in console: `X` and this should output all the rows
+* (you may need to also input into console: `np.set_printoptions(threshold=100) `) if the rows are truncated.
 
 
 ### 12 - Categorical Data 18:01
