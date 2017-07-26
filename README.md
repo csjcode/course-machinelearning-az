@@ -60,10 +60,23 @@ y = dataset.iloc[:, 3].values
 * Execute that line and type X in the console. This is our matrix of independent variables.
 * Y is goign to be for the last column
 
-
-
 ### 10 - For Python learners, summary of Object-oriented programming: classes & objects 0:00
+
 ### 11 - Missing Data 15:57
+
+* Now we are going to deal with missing data in the dataset.
+* We're missing data in columns for Spain and German.
+* One idea si to remove the line -- but we can't do that.
+* Most common: take the mean of the columns/
+* `from sklearn.preprocessing import Imputer`
+* This imports a library impute which allows us to handle missing data
+* Now we need to create an object
+* `imputer = Imputer(missing_values = 'NaN')`
+* We're switching out NaN - reason is if you look in "Variable Explorer" at Data.csv in DataFrame mode you will see NaN in missing blanks.
+* Now we make a strategy for mean = `imputer = Imputer(missing_values = 'NaN',strategy = 'mean')`
+* Now we set axis=0 for columns `imputer = Imputer(missing_values = 'NaN',strategy = 'mean', axis = 0)`
+
+
 ### 12 - Categorical Data 18:01
 ### 13 - Splitting the Dataset into the Training set and Test set 17:37
 ### 14 - Feature Scaling 15:36
