@@ -132,10 +132,30 @@ y = labelencoder_y.fit_transform(y)
 
 * Now check in Variable explorer - double-mouse-click y - you should see 1 columns with 1s and 0s
 
-
-
-
 ### 13 - Splitting the Dataset into the Training set and Test set 17:37
+
+* We have to split the Dataset into a Training and a Test set.
+* The test set with have slightly different data.
+* The test set is used to test the perfromance of how well we trained the ML.
+* We are testing the adpatation of the rules to a new set of data.
+* We expect there should not be much difference in performance.
+* It's very simple, takes 2 lines:
+```
+from sklearn.cross_validation import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+
+```
+
+* These are our dependent and independent variables by each set: X_train, X_test, y_train, y_test
+* in train_test_split we need to cite X, y which is the whole dataset. test_size 0.2 is 20%
+* We have 10 observations in the train set, 2 in test set
+* random_state is if you want random sampling.
+* Select these lines and Run
+* See in Variable explorer the new datasets
+* Note that for X in train we have 10 observations and in test we have 2.
+
+
+
 ### 14 - Feature Scaling 15:36
 ### 15 - And here is our Data Preprocessing Template! 8:48
     Quiz 1: Data Preprocessing 0:00
