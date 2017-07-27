@@ -79,9 +79,48 @@ y = dataset.iloc[:, 3].values
 * Run the impute part of the code
 * in console: `X` and this should output all the rows
 * (you may need to also input into console: `np.set_printoptions(threshold=100) `) if the rows are truncated.
-
+* Check Data.cvs in Spreadsheet, get avg. salary `=AVERAGE(C1:C11)`
+* Output: 63777.7777777778
+* Note: for startegies you can also take the "median" and "most frequent" values
 
 ### 12 - Categorical Data 18:01
+
+* The Country and Purchase columns are called Category columns (Germany/France/Spain Yes/No)
+* We have to get the text out of the machine learning equations
+* We need to encode the text into numbers.
+* `from sklearn.preprocessing import LabelEncoder`
+* Then we have to create an objects
+
+```
+from sklearn.preprocessing import LabelEncoder
+labelencoder_X = LabelEncoder()
+X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
+```
+
+* Run in console.
+* Unfortunately at this point we have higher and lower numbers for each country which could make one seem greater than another.
+* So instead we'll break them into 3 columns of 1 or 0
+* To do this we need to import OneHotEncoder `from sklearn.preprocessing import LabelEncoder, OneHotEncoder`
+
+7:38
+
+* INFO: To get info on an object got to Help `sklearn.preprocessing.OneHotEncoder`
+* Add in the following code:
+```
+#Encoding Category data
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+labelencoder_X = LabelEncoder()
+X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
+onehotencoder = OneHotEncoder(categorical_features = [0])
+X = onehotencoder.fit_transform(X).toarray()
+```
+
+* Now check in Variable explorer - double-mouse-click  x - you should see 3 columns prepended with 1s and 0s
+* Next we'll take care of the purchased Column
+* 
+
+
+
 ### 13 - Splitting the Dataset into the Training set and Test set 17:37
 ### 14 - Feature Scaling 15:36
 ### 15 - And here is our Data Preprocessing Template! 8:48
