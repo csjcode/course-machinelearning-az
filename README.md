@@ -154,12 +154,39 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 * See in Variable explorer the new datasets
 * Note that for X in train we have 10 observations and in test we have 2.
 
-
-
 ### 14 - Feature Scaling 15:36
+
+* What is feature scaling and wy do we need to do it?
+* The Euclidean Distance will be affected between the Age and Salary scale differences. (max and min for each column)
+* We need to transform the variabels tot he ame scale.
+* see graphic: 14-Standardization-Normalization
+* import sclaing library: `from sklearn.preprocessing import StandardScaler`
+* Then we are going to fit_transform each the train dataset X,y - and only transform the test set
+* Code:
+```
+from sklearn.preprocessing import StandardScaler
+sc_X = StandardScaler()
+X_train = sc_X.fit_transform(X_train)
+X_test = sc_X.transform(X_test)
+```
+* Run, see result graphic: 14-X-Standardization
+* This is all that is requried to preprocess data
+
 ### 15 - And here is our Data Preprocessing Template! 8:48
     Quiz 1: Data Preprocessing 0:00
 
+## Section 4: Simple Linear Regression
 
-
-.
+### 17 - How to get the dataset 3:18
+### 18 - Dataset + Business Problem Description 2:56
+### 19 - Simple Linear Regression Intuition - Step 1 5:45
+### 20 - Simple Linear Regression Intuition - Step 2 3:09
+### 21 - Simple Linear Regression in Python - Step 1 9:55
+### 22 - Simple Linear Regression in Python - Step 2 8:19
+### 23 - Simple Linear Regression in Python - Step 3 6:43
+### 24 - Simple Linear Regression in Python - Step 4 14:50
+### 25 - Simple Linear Regression in R - Step 1 4:40
+### 26 - Simple Linear Regression in R - Step 2 5:58
+### 27 - Simple Linear Regression in R - Step 3 3:38
+### 28 - Simple Linear Regression in R - Step 4 15:55
+    Quiz 2: Simple Linear Regression 0:00
