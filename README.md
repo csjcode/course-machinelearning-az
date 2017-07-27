@@ -115,9 +115,23 @@ onehotencoder = OneHotEncoder(categorical_features = [0])
 X = onehotencoder.fit_transform(X).toarray()
 ```
 
-* Now check in Variable explorer - double-mouse-click  x - you should see 3 columns prepended with 1s and 0s
+* Run, Now check in Variable explorer - double-mouse-click x - you should see 3 columns prepended with 1s and 0s
 * Next we'll take care of the purchased Column
-* 
+* Copy paste this part:
+```
+labelencoder_X = LabelEncoder()
+X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
+```
+* change to y
+
+```
+labelencoder_y = LabelEncoder()
+y = labelencoder_y.fit_transform(y)
+
+```
+
+* Now check in Variable explorer - double-mouse-click y - you should see 1 columns with 1s and 0s
+
 
 
 
