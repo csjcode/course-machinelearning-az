@@ -160,7 +160,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 * The Euclidean Distance will be affected between the Age and Salary scale differences. (max and min for each column)
 * We need to transform the variabels tot he ame scale.
 * see graphic: 14-Standardization-Normalization
-* import sclaing library: `from sklearn.preprocessing import StandardScaler`
+* import scaling library: `from sklearn.preprocessing import StandardScaler`
 * Then we are going to fit_transform each the train dataset X,y - and only transform the test set
 * Code:
 ```
@@ -173,11 +173,25 @@ X_test = sc_X.transform(X_test)
 * This is all that is requried to preprocess data
 
 ### 15 - And here is our Data Preprocessing Template! 8:48
+
+* We only include libraries we need.
+* See: Preprocessing Template graphic
+* For template we'll remove some of what qwe did so far
+* REMOVE or COMMENT OUT - Taking care of missing data
+* REMOVE or COMMENT OUT - Encoding Category data
+* COMMENT OUT - Feature scaling
+* Every time we start a machine learning model we will copy/paste this template
+* 
+
     Quiz 1: Data Preprocessing 0:00
 
 ## Section 4: Simple Linear Regression
 
 ### 17 - How to get the dataset 3:18
+
+
+
+
 ### 18 - Dataset + Business Problem Description 2:56
 ### 19 - Simple Linear Regression Intuition - Step 1 5:45
 ### 20 - Simple Linear Regression Intuition - Step 2 3:09
