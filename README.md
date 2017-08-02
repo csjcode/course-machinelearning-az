@@ -181,19 +181,34 @@ X_test = sc_X.transform(X_test)
 * REMOVE or COMMENT OUT - Encoding Category data
 * COMMENT OUT - Feature scaling
 * Every time we start a machine learning model we will copy/paste this template
-* 
+*
 
     Quiz 1: Data Preprocessing 0:00
 
 ## Section 4: Simple Linear Regression
 
+We're going to handle this next:
+
+* Simple Linear Regression
+* Multiple Linear Regression
+* Polynomial Regression
+* Support Vector for Regression (SVR)
+* Decision Tree Classification
+* Random Forest Classification
+
 ### 17 - How to get the dataset 3:18
 
-
-
-
 ### 18 - Dataset + Business Problem Description 2:56
+
+* Download dataset: https://www.superdatascience.com/machine-learning/
+
 ### 19 - Simple Linear Regression Intuition - Step 1 5:45
+
+* Data: Simple Linear Regression/Salary_Data.csv
+* What is the correlation between salary and years experience.
+* What is the business value add? This is the model current and what should we apply?
+* 
+
 ### 20 - Simple Linear Regression Intuition - Step 2 3:09
 ### 21 - Simple Linear Regression in Python - Step 1 9:55
 ### 22 - Simple Linear Regression in Python - Step 2 8:19
