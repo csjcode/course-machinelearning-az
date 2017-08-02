@@ -207,9 +207,27 @@ We're going to handle this next:
 * Data: Simple Linear Regression/Salary_Data.csv
 * What is the correlation between salary and years experience.
 * What is the business value add? This is the model current and what should we apply?
-* 
 
 ### 20 - Simple Linear Regression Intuition - Step 2 3:09
+
+* Linear Regression: y = b(0) + b(1) * x
+* Image: 21-Simple-Linear-Regression
+* Image: 21-Simple-Linear-Regression-Dependent-Variable
+* Image: 21-Simple-Linear-Regression-Independent-Variable
+* Image: 21-Simple-Linear-Regression-Coefficient
+
+Example:
+
+* So we start with an x (Experience) and y (salary) axis
+* So we plot Observations on the x and y axis
+* Linear Regression: Salary = b(0) + b(1) * Experience
+* Linear regression means the plotted line, slope proportion
+
+* Image: 21-Simple-Linear-Regression-FULL-EXAMPLE.png
+
+ 
+
+
 ### 21 - Simple Linear Regression in Python - Step 1 9:55
 ### 22 - Simple Linear Regression in Python - Step 2 8:19
 ### 23 - Simple Linear Regression in Python - Step 3 6:43
