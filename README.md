@@ -270,7 +270,7 @@ y = dataset.iloc[:, 1].values
 
 ### 24 - Simple Linear Regression in Python - Step 2 14:50
 
-* Fetaure Scaling we'll leave commented out for now.
+* Feature Scaling we'll leave commented out for now.
 
 * Our data has been preprocessed. Now we have to fit the algorithm.
 * We need to import the Linear Regression class
@@ -293,15 +293,37 @@ regressor.fit(X_train, y_train)
 Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
 ```
 
-* That is it for the most basic Linear Regression Mavine Learnign Model
+* That is it for the most basic Linear Regression Machine Learning Model
 
 * In the next section we'll use it to predict some new observations which will the test set observations.
 
 ### 25 - Simple Linear Regression in Python - Step 3 6:43
 
+* First step: was to preprocess the data.
+* Second step: create linear regression model
+* Next we'll predict the Test set results
+* We'll create a vector with the test set salaries called y_
 
+`y_pred = regressor.predict(X_test)`
+
+* y_pred is always the vector of predictions for the Dependent variable
+* `predict` is a method of the LinearRegression class.
+* check help for info about predict
+* Execute the code
+* New y_pred row - See result: 25-1-Result-of-y_pred.png
+* Open y_pred and y_test datasets
+* What is the difference?
+* y_test is the real salaries observed
+* y_pred is the predicted salaries
+* Compare the two datasets - test and predicted - they are not perfect, some are close some aren't.
 
 ### 26 - Simple Linear Regression in Python - Step 4
+
+
+
+
+
+
 
 
 ### 25 - Simple Linear Regression in R - Step 3 4:40
