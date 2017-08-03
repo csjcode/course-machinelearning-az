@@ -257,7 +257,17 @@ y = dataset.iloc[:, 1].values
 * y will be 1 becasue that is the independent variable column
 * Run that code though X and you should get X with one column
 * Run code for y and you should get y with one column
-*
+
+* At this point we have split the orginal dataset. Now, we have to split into a (1) Train and (2) Test Sets
+
+* `X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, random_state = 0)`
+
+* We want to test size to be less than a half -- let;s do 1/3 for a round 10 number (1/3 of 30)
+* Execute this code. It divides data sets again. See img: 23-Train-Test-Sets.png
+* We're using X_train and y_train to get the correlations and then we will use the result in the Test groups
+
+* Next step is FEATURE SCALING
+
 
 
 
