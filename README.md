@@ -234,9 +234,37 @@ Example:
 * Take the differnece of that and take the SUm of the squares... SUM(y - y^)^2 -> min
 * So it takes the gaps and sums them, and takes the linbe that has the minimal sum of squares possible.
 * See image: 22-Ordinary-Least-Squares-3-SUM.png
-* 
-
+*
 ### 23 - Simple Linear Regression in Python - Step 3 6:43
+
+* Setup  Simple Linear Regression script in Spyder
+* First thing we need to do is use our Data Processing template (last file made, previous section) to get started. Copy paste
+* Update csv to Salary_Data.csv and import into Variable Expolorer
+* We have 30 observations (30 employees)
+* We want to train and establish a correlation between experience and salary.
+* We have to SPLIT the data out first.
+* X is the matrix of features (dependent variable)
+* Independent variable is the Years for experience
+* Dependent variable is the salary
+
+```
+dataset = pd.read_csv('Salary_Data.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, 1].values
+```
+
+* X removes the last column
+* y will be 1 becasue that is the independent variable column
+* Run that code though X and you should get X with one column
+* Run code for y and you should get y with one column
+*
+
+
+
+
+
+
+
 ### 24 - Simple Linear Regression in Python - Step 4 14:50
 ### 25 - Simple Linear Regression in R - Step 1 4:40
 ### 26 - Simple Linear Regression in R - Step 2 5:58
