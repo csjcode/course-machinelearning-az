@@ -235,7 +235,7 @@ Example:
 * So it takes the gaps and sums them, and takes the linbe that has the minimal sum of squares possible.
 * See image: 22-Ordinary-Least-Squares-3-SUM.png
 *
-### 23 - Simple Linear Regression in Python - Step 3 6:43
+### 23 - Simple Linear Regression in Python - Step 1 6:43
 
 * Setup  Simple Linear Regression script in Spyder
 * First thing we need to do is use our Data Processing template (last file made, previous section) to get started. Copy paste
@@ -266,18 +266,46 @@ y = dataset.iloc[:, 1].values
 * Execute this code. It divides data sets again. See img: 23-Train-Test-Sets.png
 * We're using X_train and y_train to get the correlations and then we will use the result in the Test groups
 
-* Next step is FEATURE SCALING
+* Next step is FEATURE SCALING & FITTING the algorithm to our Dataset
+
+### 24 - Simple Linear Regression in Python - Step 2 14:50
+
+* Fetaure Scaling we'll leave commented out for now.
+
+* Our data has been preprocessed. Now we have to fit the algorithm.
+* We need to import the Linear Regression class
+`from sklearn.linear_model import LinearRegression`
+* Out of this we are going to make an object that will be our Linear Regressor
+* The Regressor object will use the fit fethod to fit to the data model.
+```
+# Fitting Simple Linear Regression to the Training set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+```
+* Check help for info on the LinearRegression class.
+* Now this code can be executed.
+* Result:
+```
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
+```
+
+* That is it for the most basic Linear Regression Mavine Learnign Model
+
+* In the next section we'll use it to predict some new observations which will the test set observations.
+
+### 25 - Simple Linear Regression in Python - Step 3 6:43
 
 
 
+### 26 - Simple Linear Regression in Python - Step 4
 
 
-
-
-
-### 24 - Simple Linear Regression in Python - Step 4 14:50
-### 25 - Simple Linear Regression in R - Step 1 4:40
-### 26 - Simple Linear Regression in R - Step 2 5:58
+### 25 - Simple Linear Regression in R - Step 3 4:40
+### 26 - Simple Linear Regression in R - Step 4 5:58
 ### 27 - Simple Linear Regression in R - Step 3 3:38
 ### 28 - Simple Linear Regression in R - Step 4 15:55
     Quiz 2: Simple Linear Regression 0:00
