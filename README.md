@@ -209,6 +209,7 @@ We're going to handle this next:
 * What is the business value add? This is the model current and what should we apply?
 
 ### 20 - Simple Linear Regression Intuition - Step 2 3:09
+### 21 - Simple Linear Regression in Python - Step 1 9:55
 
 * Linear Regression: y = b(0) + b(1) * x
 * Image: 21-Simple-Linear-Regression
@@ -225,11 +226,16 @@ Example:
 
 * Image: 21-Simple-Linear-Regression-FULL-EXAMPLE.png
 
- 
-
-
-### 21 - Simple Linear Regression in Python - Step 1 9:55
 ### 22 - Simple Linear Regression in Python - Step 2 8:19
+
+* See ordinary least squares image. 22-Ordinary-Least-Squares.png
+* 22-Ordinary-Least-Squares-2-difference.png - y-i (red) and y-i-hat (green)
+* This is the difference between what is observed and the model
+* Take the differnece of that and take the SUm of the squares... SUM(y - y^)^2 -> min
+* So it takes the gaps and sums them, and takes the linbe that has the minimal sum of squares possible.
+* See image: 22-Ordinary-Least-Squares-3-SUM.png
+* 
+
 ### 23 - Simple Linear Regression in Python - Step 3 6:43
 ### 24 - Simple Linear Regression in Python - Step 4 14:50
 ### 25 - Simple Linear Regression in R - Step 1 4:40
