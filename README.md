@@ -318,16 +318,69 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 * Compare the two datasets - test and predicted - they are not perfect, some are close some aren't.
 
 ### 26 - Simple Linear Regression in Python - Step 4
-
-
-
-
-
-
-
-
 ### 25 - Simple Linear Regression in R - Step 3 4:40
 ### 26 - Simple Linear Regression in R - Step 4 5:58
 ### 27 - Simple Linear Regression in R - Step 3 3:38
 ### 28 - Simple Linear Regression in R - Step 4 15:55
     Quiz 2: Simple Linear Regression 0:00
+
+
+
+### 31 - How to get the dataset 3:18
+
+* General instructions about getting dataset.
+
+### 32 - Dataset + Business Problem Description 3:44
+
+* venture capital dataset
+* 5 columns
+* 50 companies
+* View CSV - 50_Startups.csv
+* 
+
+### 33 - Multiple Linear Regression Intuition - Step 1 1:02
+
+
+
+### 34 - Multiple Linear Regression Intuition - Step 2 1:00
+
+
+
+### 35 - Multiple Linear Regression Intuition - Step 3 7:21
+
+
+
+### 36 - Multiple Linear Regression Intuition - Step 4 2:10
+
+
+
+### 37 - Multiple Linear Regression Intuition - Step 5 15:41
+
+
+
+### 38 - Multiple Linear Regression in Python - Step 1 15:57
+
+
+
+### 39 - Multiple Linear Regression in Python - Step 2 2:56
+
+
+
+### 40 - Multiple Linear Regression in Python - Step 3 5:28
+
+
+
+### 41 - Multiple Linear Regression in Python - Backward Elimination - Preparation 13:14
+
+
+
+### 42 - Multiple Linear Regression in Python - Backward Elimination - HOMEWORK ! 12:40
+
+
+
+### 43 - Multiple Linear Regression in Python - Backward Elimination - Homework Solution 9:10
+
+
+
+
+    .
