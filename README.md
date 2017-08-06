@@ -344,7 +344,7 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 ### 33 - Multiple Linear Regression Intuition - Step 1 1:02
 
 * see image:  33-Multiple-Regression-Formula.jpg
-* Multiple Regresion Formula: y = b(0) + b(1)\*x(1) + b(2)\*x(2) etc.
+* Multiple Regresion Formula: `y = b(0) + b(1)*x(1) + b(2)*x(2) etc.`
 * See image on full desciption of formula: 33-2-Multiple-Regression-Formula--FULL-Descriptions.png
 
 ### 34 - Multiple Linear Regression Intuition - Step 2 1:00
@@ -357,8 +357,15 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 
 ### 35 - Multiple Linear Regression Intuition - Step 3 7:21
 
-
-
+* see image: 34-1-Dummy-Variables.png
+* `y = b(0) + b(1)*x(1) + b(2)*x(2) + b(3)*x(3) + ????)`
+* Keep in mind the last one is State which is a categorical model (not numeric like the others)
+* Remembe what we do: for each variation you need to create a new column with 0 or 1.
+* So in this case you have new column sfor New York and California.
+* `y = b(0) + b(1)*x(1) + b(2)*x(2) + b(3)*x(3) + b(4)*D(1)`
+* NOTE: We only need to account for the New York column, since if it;s 0 we know that is California.
+* So essentially CA will be included as a constant in the coefficent b(0)
+* see image: 34-5-Dummy-Variables.png
 
 
 ### 36 - Multiple Linear Regression Intuition - Step 4 2:10
