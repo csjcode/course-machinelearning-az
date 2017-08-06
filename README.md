@@ -337,14 +337,15 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 * 50 companies
 * View CSV - 50_Startups.csv
 * Fields: R&D Spend, Administration, Marketing Spend, State, Profit
-* We need to create a model to decide which types of companies are best to invets in based on Profit.
-* Dependent variable: Profit. Other variables are independent variables.
-* They need to find out which companies do better on varuous factors.
-* 
+* We need to create a model to decide which types of companies are best to invest in based on Profit.
+* Dependent variable (DV): Profit. Other variables are independent variables (IV).
+* They need to find out which companies do better on various factors.
 
 ### 33 - Multiple Linear Regression Intuition - Step 1 1:02
 
-
+* see image:  33-Multiple-Regression-Formula.jpg
+* Multiple Regresion Formula: y = b(0) + b(1)\*x(1) + b(2)\*x(2) etc.
+* See image on full desciption of formula: 33-2-Multiple-Regression-Formula--FULL-Descriptions.png
 
 ### 34 - Multiple Linear Regression Intuition - Step 2 1:00
 
