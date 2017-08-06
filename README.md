@@ -349,9 +349,15 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 
 ### 34 - Multiple Linear Regression Intuition - Step 2 1:00
 
-
+* Quick heads up -- there is a Caveat about Linear Regressions.
+* Linear Regressions have assumptions.
+* See image: 34-1-Linear-Regressions-Assumptions.jpg
+* Linearity, Homoscedasticity, Multivariate normality, Independence of errors, Lack of multicollinerity
+* Always make sure your Assumptions are correct when buuilding a Linear Regression.
 
 ### 35 - Multiple Linear Regression Intuition - Step 3 7:21
+
+
 
 
 
