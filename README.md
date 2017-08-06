@@ -336,6 +336,10 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 * 5 columns
 * 50 companies
 * View CSV - 50_Startups.csv
+* Fields: R&D Spend, Administration, Marketing Spend, State, Profit
+* We need to create a model to decide which types of companies are best to invets in based on Profit.
+* Dependent variable: Profit. Other variables are independent variables.
+* They need to find out which companies do better on varuous factors.
 * 
 
 ### 33 - Multiple Linear Regression Intuition - Step 1 1:02
