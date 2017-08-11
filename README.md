@@ -370,7 +370,10 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 
 ### 36 - Multiple Linear Regression Intuition - Step 4 2:10
 
-
+* Dummy Variable image
+* Remember-- you can't include 2 dummy variables at the same time.
+* Multiple linearity: D(2) = 1- D(1)
+* 
 
 ### 37 - Multiple Linear Regression Intuition - Step 5 15:41
 
