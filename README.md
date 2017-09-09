@@ -371,11 +371,32 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 ### 36 - Multiple Linear Regression Intuition - Step 4 2:10
 
 * Dummy Variable image
-* Remember-- you can't include 2 dummy variables at the same time.
+* Remember-- you CANNOT include 2 dummy variables at the same time.
 * Multiple linearity: D(2) = 1- D(1)
-* 
+* Whenever building a model omit one Dummy variable
+
 
 ### 37 - Multiple Linear Regression Intuition - Step 5 15:41
+
+* Step by Step Building a Model
+* THE OLD DAYS: We had x(1) -> y .... One independent variable and one dependent variable
+* This was just a simple Linear Regression to build.
+* Now those easy days are gone as we have multiple independent variables which could all be predictors
+* There are so many we need to decide which ones to Keep
+* See 37-2-Variables.png
+* Why thow out variables? (1) If you put garbage in you get garbage out, (2) You have to explain the variable correlations
+
+#### There are 5 Methods to Building a Model
+
+* (1) **All-in** - throw in all your variables (a) if you have prior knowledge of factors, (b) you have to such as required by your company, (c) preparing for Backward Elimination,  
+* (2) **Backward Elimination** - (a) Sleect a significance level, (b) Fit full model with all predictors, (c) Consider predictor with highest p-value, if P > SL got to next step,else FIN, (d) Remove that pedictor, (e) Fit model without this variable
+* (3) **Forward Selection**
+* (4) **Bidirectional Elimination (Stepwise Regression)**
+* (5) **Score Comparison**
+
+* #2,3,4 are Stepwise Regressions,  usually #4 is implied.
+
+
 
 
 
