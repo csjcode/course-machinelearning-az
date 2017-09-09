@@ -389,16 +389,14 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 #### There are 5 Methods to Building a Model
 
 * (1) **All-in** - throw in all your variables (a) if you have prior knowledge of factors, (b) you have to such as required by your company, (c) preparing for Backward Elimination,  
-* (2) **Backward Elimination** - (a) Sleect a significance level, (b) Fit full model with all predictors, (c) Consider predictor with highest p-value, if P > SL got to next step,else FIN, (d) Remove that pedictor, (e) Fit model without this variable
-* (3) **Forward Selection**
-* (4) **Bidirectional Elimination (Stepwise Regression)**
-* (5) **Score Comparison**
+* (2) **Backward Elimination** - (a) Sleect a significance level, (b) Fit full model with all predictors, (c) Consider predictor with highest p-value, if P > SL got to next step,else FIN, (d) Remove that pedictor, (e) Fit model without this variable, (f) Go back to c
+* (3) **Forward Selection** - (a) Sleect a significance level, (b) Fit all simple regression models, select one with lowest p-value, (c) Keep this variable and fit all possible models with 1 extra predictor added to what you have, (d) get the predictor with the lowest p-value . If P<SL go to c, else FIN
+* (4) **Bidirectional Elimination (Stepwise Regression)** see 37-8-Bidirectional-Elimination.png
+* (5) **Score Comparison** (All possible models) -  
 
 * #2,3,4 are Stepwise Regressions,  usually #4 is implied.
 
-
-
-
+* We're going to concentrate on Backward Elimination because it's the fastest and you still get to see the step by step
 
 ### 38 - Multiple Linear Regression in Python - Step 1 15:57
 
