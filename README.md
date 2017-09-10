@@ -400,6 +400,34 @@ Out[13]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=F
 
 ### 38 - Multiple Linear Regression in Python - Step 1 15:57
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Importing the dataset
+dataset = pd.read_csv('50_Startups.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, 4].values
+
+# Splitting the dataset into the Training set and Test set
+from sklearn.cross_validation import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+```
+
+* Highlight dataset line, run to look at dataset
+* 50 observations of startups
+* We're going to see if there are some linear dependencies between independent variables
+* Dependent variable is Profit, the variable we are trying to predict
+* Matrix of independent variables will be X and y
+* In this course the spreadsheet is all independent variables first and dependent variables last. We may have to change X and y
+* We put X and -1 to get rid of the index column (it's not an independent variable, we want just independent variables)
+* Change y to 4 (the last column from 0)
+* Run X and y
+
+* Dummy variables - Next we have to jump back to our Categorical data file we did in Part 1 - this is to get rid of relational order.
+* Go to File Explorer and get it.
+
 
 
 ### 39 - Multiple Linear Regression in Python - Step 2 2:56
