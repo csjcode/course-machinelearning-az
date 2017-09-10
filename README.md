@@ -426,7 +426,45 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 * Run X and y
 
 * Dummy variables - Next we have to jump back to our Categorical data file we did in Part 1 - this is to get rid of relational order.
-* Go to File Explorer and get it.
+* Go to File Explorer and get it. categorical_data.py
+* Copy and paste this data directly BEFORE the splitting of the data chunks (train_test_split):
+
+```python
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+labelencoder_X = LabelEncoder()
+X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
+onehotencoder = OneHotEncoder(categorical_features = [0])
+X = onehotencoder.fit_transform(X).toarray()
+
+```
+
+Note: we do not need the part of encoding the Dependent variable, only independent
+
+* change `X[:, 0]` to `X[:, 3]`
+* `X[:, 3] = labelencoder_X.fit_transform(X[:, 3])`
+* onehotencoder can only be used onthe nukbred variables, so we need to change categorical_features to `categorical_features = [3]`
+```
+X[:, 3] = labelencoder_X.fit_transform(X[:, 3])
+onehotencoder = OneHotEncoder(categorical_features = [3])
+```
+* Run.
+* Last column (State) was replaced with 3 columns (dummy variables, needed to turn it into a number)
+* There is a new column for each state, and that is a 0 or 1
+
+* Add one more line "Adding the Dummy Variable Trap"
+
+```
+# Avoiding the Dummy Variable Trap
+X = X[:, 1:]
+```
+
+* This removes the first column from X
+
+* Next we have to split into a training set and a test set
+* Let's see if we have ot change the test size
+* We are currently making 50 test observations, so a good test size for traning would be 10 (.2), which is already there `test_size = 0.2,`
+* Run that section
+
 
 
 
